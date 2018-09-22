@@ -1,0 +1,91 @@
+
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style >
+#content {color:#58d68d;}
+.heading {color:#f8c471;}
+#content1 {color:#FFFF00;}
+
+.mySlides {display:none;}
+
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+	
+</head>
+<body>
+<div id = "content">
+	<h1 align="center">Hello there!! Welcome to our Website</h1>
+	<h2 align="center">Here you can </h2>
+</div>
+<div class="w3-content" style="max-width:1300px">
+
+	<div class="mySlides w3-container w3-grey">
+    		<h1><b>Find Reviews Quick and Easy</b></h1>
+    		<h1><i>For all your college needs</i></h1>
+  	</div>
+	
+	<div class="mySlides w3-container w3-teal">
+    		<h1><b>Colleges Reviewed</b></h1>
+    		<h1><i>Using Sentiment Analysis</i></h1>
+  	</div>
+
+	<div class="mySlides w3-container w3-lime">
+    		<h1><b>Find the college that is best for you...</b></h1>
+	 	<h1><i>Informative, Awesome & Truthful</i> </h1>
+    
+  	</div>
+                                                                                                               
+	
+</div>
+
+  
+
+ 
+
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
+</script>
+<!-- webpage content goes here in the body -->
+	<div id="page">
+		<div id="content1">
+			<h3>So What Is Sentiment Analysis?</h3>
+			<p>
+				Sentiment = <br>
+					<i> &nbsp; &nbsp; &nbsp; &nbsp;feelings<br> &nbsp; &nbsp; &nbsp; &nbsp;Attitudes<br>
+					&nbsp; &nbsp; &nbsp; &nbsp;Emotions<br>
+					&nbsp; &nbsp; &nbsp; &nbsp;Opinions</i>
+			</p>
+			
+		</div>
+		</div>
+		<h3 style="background-color:rgb(243,105,0)"">
+Here you can get information about all the colleges.
+</h3>
+		
+</body>
+</html>
+
+{% endblock %}                                                                                              

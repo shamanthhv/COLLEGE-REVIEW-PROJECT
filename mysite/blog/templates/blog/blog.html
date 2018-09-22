@@ -1,0 +1,6 @@
+{% extends "personal/header.html" %}
+{% block content %}
+	{% for college in object_list %}
+		<h2 style="color:lime;">{{college.college_name}}</h2><p><a href="/blog/{{college.id}}">"Know more about this college"</a></p>
+	{% endfor %}
+{% endblock %}

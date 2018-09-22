@@ -1,0 +1,9 @@
+{% extends "personal/header.html" %}
+{% block content %}
+	<h2 style="color:lime">{{college.college_name}}</h2>
+	<p><font color="White" size=4>{{college.college_details|safe|linebreaks}}</font></p>
+	<h4 style="color:lime">Some of the reviews of this college are:</h4>
+	<p><font color="White" size=4>{{college.college_reviews|safe|linebreaks}}</font></p>
+	<h4 style="color:lime">The overall rating of this college based on sentiment analysis:</h4>
+	<h5 style="color:White">{{college.college_rating}}</h5>
+{% endblock %}

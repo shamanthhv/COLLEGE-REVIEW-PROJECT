@@ -1,0 +1,18 @@
+
+{% extends "personal/header.html" %}
+
+{% block content %}
+
+<form action="/your-review/" method="POST" style="display:block;height:120px;width:60%;margin:0 auto;border-radius:8px;border:0;padding:10px;font-size:2em;color:rgba(0,0,0,1);box-shadow: 2px 2px 6px rgba(0,0,0,0.3 ">{% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+
+{% endblock %} 
+
+
+
+
+
+
+
